@@ -34,9 +34,9 @@ st.markdown("<h3 style='text-align: center; color: green;'>The dashboard will vi
 
 st.markdown('______')
 
-df= pd.read_csv(r'E:\Trim III\COVID-19\covid_19_india.csv')
+df= pd.read_csv(r'covid_19_india.csv')
 
-img=Image.open(r'C:\Users\Bose\Desktop\P\covid-libguide.jpg')
+img=Image.open(r'covid-libguide.jpg')
 st.image(img, width=700)
 df.drop(['ConfirmedIndianNational','ConfirmedForeignNational'],axis=1,inplace=True)
 
