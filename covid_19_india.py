@@ -275,8 +275,8 @@ st.markdown('______')
 
 #############################################################################  Vaccine ##################################################################################
 
-#df_vaccine_statewise = pd.read_csv(r'C:\Users\sayan\Desktop/covid_vaccine_statewise.csv')
-df_vaccine_statewise = pd.read_csv(r'E:\Trim III\COVID-19/covid_vaccine_statewise.csv')
+
+df_vaccine_statewise = pd.read_csv(r'covid_vaccine_statewise.csv')
 
 ########  Total vaccinated  #########
 
