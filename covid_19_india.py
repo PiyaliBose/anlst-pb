@@ -70,14 +70,14 @@ default=["All States"]
 
 if state_choices == default:
     data = data1
-    f, ax = plt.subplots(figsize=(10,10 ))
+    f, ax = plt.subplots(figsize=(14,14 ))
     data.sort_values('Confirmed',ascending=False,inplace=True)
     sns.set_color_codes("pastel")
     sns.barplot(x="Confirmed", y="State/UnionTerritory", data=data,label="Deaths", color="red")
     sns.set_color_codes("muted")
     sns.barplot(x="Cured", y="State/UnionTerritory", data=data, label="Cured", color="green")
     ax.legend(ncol=2, loc="lower right", frameon=True)
-    ax.set(xlim=(0, 700000), ylabel="",xlabel="Cases")
+    ax.set(xlim=(0, 1700000), ylabel="",xlabel="Cases")
     sns.despine(left=True, bottom=True)
     st.pyplot(f)
 
@@ -87,14 +87,14 @@ elif state_choices == []:
 
 else:
     data = data1.loc[data1['State/UnionTerritory'].isin(state_choices) ]
-    f, ax = plt.subplots(figsize=(10,10 ))
+    f, ax = plt.subplots(figsize=(14,14 ))
     data.sort_values('Confirmed',ascending=False,inplace=True)
     sns.set_color_codes("pastel")
     sns.barplot(x="Confirmed", y="State/UnionTerritory", data=data,label="Deaths", color="red")
     sns.set_color_codes("muted")
     sns.barplot(x="Cured", y="State/UnionTerritory", data=data, label="Cured", color="green")
     ax.legend(ncol=2, loc="lower right", frameon=True)
-    ax.set(xlim=(0, 700000), ylabel="",xlabel="Cases")
+    ax.set(xlim=(0, 1700000), ylabel="",xlabel="Cases")
     sns.despine(left=True, bottom=True)
     st.pyplot(f)
 
@@ -385,3 +385,5 @@ st.write("#")
 st.markdown('______')
 
 st.title('#WE_ARE_TOGETHER_IN_THIS')
+im=Image.open(r'C:\Users\Bose\Desktop\P\87676.jpg')
+st.image(im, width=400)
