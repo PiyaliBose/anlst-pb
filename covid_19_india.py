@@ -385,5 +385,5 @@ st.write("#")
 st.markdown('______')
 
 st.title('                 #WE_ARE_TOGETHER_IN_THIS                            ')
-im=Image.open(r'C:\Users\Bose\Desktop\P\87676.jpg')
+im=Image.open(r'87676.jpg')
 st.image(im, width=400)
