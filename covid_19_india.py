@@ -387,3 +387,7 @@ st.markdown('______')
 st.title('                 #WE_ARE_IN_THIS_TOGETHER                            ')
 im=Image.open(r'87676.jpg')
 st.image(im, width=400)
+
+st.write("#")
+st.write("#")
+st.write("Created by Piyali Bose on 15-05-2021")
