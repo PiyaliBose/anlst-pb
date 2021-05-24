@@ -275,8 +275,8 @@ st.markdown('______')
 
 #############################################################################  Vaccine ##################################################################################
 
-
-df_vaccine_statewise = pd.read_csv(r'covid_vaccine_statewise.csv')
+#df_vaccine_statewise = pd.read_csv(r'C:\Users\sayan\Desktop/covid_vaccine_statewise.csv')
+df_vaccine_statewise = pd.read_csv(r'E:\Trim III\COVID-19/covid_vaccine_statewise.csv')
 
 ########  Total vaccinated  #########
 
@@ -384,9 +384,11 @@ st.write("#")
 
 st.markdown('______')
 
-st.title('                 #WE_ARE_IN_THIS_TOGETHER                            ')
+
+st.title('                      #WE_ARE_TOGETHER_IN_THIS                    ')
 im=Image.open(r'87676.jpg')
 st.image(im, width=400)
+
 
 st.write("#")
 st.write("#")
